@@ -33,7 +33,6 @@ describe("Tests for Contacts App",function() {
             var diff = (contactLength - scope.itemsToDelete.length);
             scope.deleteContact();
             expect(scope.contactList.length).toEqual(diff);
-            
         });
     });
 });

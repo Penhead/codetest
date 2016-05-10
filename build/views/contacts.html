@@ -63,15 +63,15 @@
 			<div class="columns medium-12 medium-centered">
 			<h5>Add New Contact <span style="float: right; cursor: pointer" class="fi-x" ng-click="closeAdd()"></span></h5>
 			
-			<form>
-				<input type="text" ng-model="newContact.type" placeholder="type"/>
+			<form name="contacts" novalidate>
+				<input type="text" ng-model="newContact.type" required placeholder="type"/>
 				<input type="text" ng-model="newContact.name" placeholder="name"/>
 				<input type="text" ng-model="newContact.title" placeholder="title"/>
 				<input type="number" ng-model="newContact.phone" placeholder="phone"/>
 				<input type="text" ng-model="newContact.ext" placeholder="ext"/>
 				<input type="number" ng-model="newContact.fax" placeholder="fax"/>
 				<input type="email" ng-model="newContact.email" placeholder="email"/>
-				<button ng-click="addContact(newContact);">Add</button>
+				<button  ng-click="addContact(newContact);">Add</button>
 			</form>
 		</div>
 		</div>	
