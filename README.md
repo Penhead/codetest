@@ -1,7 +1,7 @@
 # codetest
 
 ##Init Project
-**First run these commands**
+**First run these commands in project root**
 ```
 npm install
 bower install
