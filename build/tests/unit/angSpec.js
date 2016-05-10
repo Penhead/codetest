@@ -27,11 +27,13 @@ describe("Tests for Contacts App",function() {
             console.log(scope.contactList);
             expect(scope.contactList).toContain(testObj);
         });
-        it("should add new contact to list", function(){
+        it("should be a new length after removing contacts from list", function(){
             var contactLength = scope.contactList.length;
             scope.itemsToDelete = [1]; 
+            var diff = (contactLength - scope.itemsToDelete.length);
             scope.deleteContact();
-            expect(contactLength - scope.itemsToDelete.length).toEqual(scope.contactList.length);
+            expect(scope.contactList.length).toEqual(diff);
+            
         });
     });
 });
