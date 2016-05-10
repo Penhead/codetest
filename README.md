@@ -1,9 +1,11 @@
 # codetest
 
 ###Init Project  
-first run these commands  
+first run these commands within the project root  
 npm install  
 bower install  
+
+Project index.html can be viewed from the build folder.  
 
 ###Project Details
 I chose to keep it simple and as pure to angular as possible. So my dependencies are minimal.  
