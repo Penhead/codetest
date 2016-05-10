@@ -6,12 +6,12 @@ npm install
 bower install  
 
 ###Project Details
-I chose to keep it simple and as pure the angular as possible. So my dependencies are minimal.  
+I chose to keep it simple and as pure to angular as possible. So my dependencies are minimal.  
 I'm using AngularJs for my application framework.  
 ui-router to handle routing.  
 Foundation 6 as my css framework.  
 npm and bower were used to create a testing environment.  
-I also broke the project structure down by assets, controllers, services, views, test, in case this would need to be expanded in the future.  
+I also broke the project folder structure down by assets, controllers, services, views, and tests. This is in case this project would need to be expanded in the future.  
 I included animate css to handle my simple animations for fading.  
 
 ###Testing 
