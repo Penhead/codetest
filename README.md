@@ -20,9 +20,7 @@ In order to run test in terminal, cd to /build/tests/ and run the following comm
 karma start karma.conf.js 
 
 ###Special Notes
-Normally I use $http.get for calls to an api to retreive database information. But in this case I created a json file that contains the contacts and made a http.get request to it.  
-Also I used localstorage to persist data on every refresh I get the data from from the localstorage. Again normally I'd get all data from api/database sources in a production application.  
-I took an immutable data approach by making copies of any objects that needed to updated and rerendering it.  
-Normally I use grunt or webpack from module loading but in this case I chose not to use it since it was a very simple component that I was building.  
-
-
+Normally I use $http.get for calls to an api to retreive database information. But in this case I created a json file that contains the contacts and made a $http.get request to it.  
+Also I used localstorage to persist data. On every refresh I get the data from from the localstorage. Again normally I'd get all data from api/database sources in a production application.  
+I took an immutable data approach by making copies of any objects that needed to be updated and rerendering it.  
+Normally I use grunt or webpack from module loading but in this case I chose not to use it since it was a very simple component/application that I was building.  
