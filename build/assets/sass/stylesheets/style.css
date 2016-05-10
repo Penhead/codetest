@@ -1,0 +1,188 @@
+/* line 1, ../sass/style.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #828282;
+}
+
+/* line 5, ../sass/style.scss */
+h5 {
+  color: #4BA9DF;
+  font-weight: 600;
+}
+
+/* line 9, ../sass/style.scss */
+.tableContainer {
+  border: 1px solid #C8C8C8;
+  border-radius: 5px;
+}
+
+/* line 13, ../sass/style.scss */
+table {
+  border: none;
+  margin: 0;
+  border-collapse: collapse !important;
+}
+/* line 18, ../sass/style.scss */
+table th {
+  color: #4BA9DF;
+  padding: 20px !important;
+}
+/* line 22, ../sass/style.scss */
+table th:first-child {
+  border: none;
+  border-radius: 6px 0 0 0;
+}
+/* line 26, ../sass/style.scss */
+table th:last-child {
+  border: none;
+  border-radius: 0 6px 0 0;
+}
+/* line 31, ../sass/style.scss */
+table th:only-child {
+  border-radius: 6px 6px 0 0;
+}
+/* line 35, ../sass/style.scss */
+table td {
+  padding: 8px !important;
+}
+/* line 38, ../sass/style.scss */
+table td:first-child {
+  border: none;
+}
+/* line 41, ../sass/style.scss */
+table td:last-child {
+  border: none;
+}
+/* line 45, ../sass/style.scss */
+table tbody tr:nth-child(even) {
+  background-color: white;
+}
+/* line 48, ../sass/style.scss */
+table tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+/* line 51, ../sass/style.scss */
+table thead, table tbody {
+  background: transparent !important;
+  border: none !important;
+}
+/* line 55, ../sass/style.scss */
+table thead {
+  border-bottom: 1px solid lightgray !important;
+}
+/* line 58, ../sass/style.scss */
+table th, table td {
+  border-left: 1px #e6e6e6 solid;
+  border-right: 1px #e6e6e6 solid;
+  font-size: 14px;
+}
+/* line 63, ../sass/style.scss */
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* line 68, ../sass/style.scss */
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* line 107, ../sass/style.scss */
+.section {
+  padding: 40px 0;
+}
+
+/* line 110, ../sass/style.scss */
+.collapse {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* line 114, ../sass/style.scss */
+.smalltext {
+  font-size: 13px;
+}
+
+/* line 117, ../sass/style.scss */
+.addContainer {
+  background-color: rgba(160, 160, 160, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+/* line 127, ../sass/style.scss */
+.addContact {
+  box-shadow: 3px 3px 9px #D0D0D0;
+  background-color: white;
+  border: 1px solid #C8C8C8;
+  border-radius: 5px;
+  padding: 15px;
+  min-width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 139, ../sass/style.scss */
+.addContact button {
+  background-color: #4BA9DF;
+  color: white;
+  border-radius: 3px;
+  padding: 8px 15px;
+}
+
+/* line 147, ../sass/style.scss */
+.options ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 151, ../sass/style.scss */
+.options ul li {
+  display: inline-block;
+  font-size: 30px;
+  margin-right: 15px;
+}
+/* line 156, ../sass/style.scss */
+.options ul li:hover {
+  color: #4BA9DF;
+}
+
+/* line 162, ../sass/style.scss */
+.underscore {
+  border: 1px solid #C8C8C8;
+  width: 21px;
+  border-radius: 3px;
+  text-align: center;
+  height: 22px;
+  display: inline-block;
+  position: relative;
+  font-weight: 800;
+}
+
+/* line 173, ../sass/style.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 177, ../sass/style.scss */
+p {
+  margin: 0;
+}
+
+/* line 181, ../sass/style.scss */
+p + p {
+  margin: .5em 0 0;
+}
+
+/* line 185, ../sass/style.scss */
+input[type=checkbox] {
+  zoom: 1.7;
+  margin: 0;
+  -moz-transform: scale(1.3, 1.3);
+}

@@ -1,0 +1,84 @@
+<div class="row section">
+	<div class="columns medium-10 medium-centered">
+		<div class="row">
+			<div class="columns medium-10">
+				<h5>External Contacts</h5>
+				<p class="smalltext">Select the client contacts associated with this offer</p>
+			</div>
+			<div class="columns medium-2">
+				<div>
+					<span class="collapse right" ng-click="toggleCollapse()"><span class="underscore">__</span> Collapse</span>
+				</div>
+			</div>
+		</div>
+		<div ng-class="{fadeOut: collapse, fadeIn: collapse == false}" class="animated">
+			<div class="row">
+				<div class="columns medium-10">
+					<div class="options">
+						<ul>
+							<li class="fi-plus" style="cursor: pointer" ng-click="showAdd()"></li>
+							<li class="fi-trash" style="cursor: pointer" ng-click="deleteContact()"></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<div  class="animated tableContainer">
+			<table>
+			  <thead>
+				<tr>
+				  <th></th>
+				  <th width="200">Type</th>
+				  <th>Name</th>
+				  <th>Title</th>
+				  <th width="150">Phone</th>
+				  <th>Ext</th>
+				  <th width="150">Fax</th>
+				  <th >Email</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr ng-repeat="contact in contactList track by $index">
+				  <td>
+						<p>
+							<input type="checkbox" ng-model="contact.Selected" ng-click="pushItemToDelete($event, $index)"/>
+							{{contact.Selected}}
+						</p>
+					</td>
+				  <td>{{contact.type}}</td>
+				  <td>{{contact.name}}</td>
+				  <td>{{contact.title}}</td>
+				  <td>{{contact.phone}}</td>
+				  <td>{{contact.ext}}</td>
+				  <td>{{contact.fax}}</td>
+				  <td>{{contact.email}}</td>
+				</tr>
+			  </tbody>
+			</table>	
+		</div>
+		
+		</div>
+		
+		<div ng-show="showAddForm" class="addContainer">
+		<div  class="addContact">
+			<div class="row ">
+			<div class="columns medium-12 medium-centered">
+			<h5>Add New Contact <span style="float: right; cursor: pointer" class="fi-x" ng-click="closeAdd()"></span></h5>
+			
+			<form>
+				<input type="text" ng-model="newContact.type" placeholder="type"/>
+				<input type="text" ng-model="newContact.name" placeholder="name"/>
+				<input type="text" ng-model="newContact.title" placeholder="title"/>
+				<input type="number" ng-model="newContact.phone" placeholder="phone"/>
+				<input type="text" ng-model="newContact.ext" placeholder="ext"/>
+				<input type="number" ng-model="newContact.fax" placeholder="fax"/>
+				<input type="email" ng-model="newContact.email" placeholder="email"/>
+				<button ng-click="addContact(newContact);">Add</button>
+			</form>
+		</div>
+		</div>	
+		</div>
+			
+		</div>
+
+	</div>
+</div>
