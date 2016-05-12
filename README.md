@@ -24,7 +24,7 @@ In order to run test in the command line, change directories to /build/tests/ an
 ```
 karma start karma.conf.js
 ```
-If you don't have karma command installed use this command to install the karma command line tool  
+If you don't have karma command installed use this command to install the karma command line tool and then you should be able to run the command above. 
 ````
 npm install -g karma-cli
 ````
