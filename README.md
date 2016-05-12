@@ -24,6 +24,10 @@ In order to run test in the command line, change directories to /build/tests/ an
 ```
 karma start karma.conf.js
 ```
+If you don't have karma command installed use this command to install the karma command line tool  
+````
+npm install -g karma-cli
+````
 
 ##Special Notes
 * Normally I use ```$http.get``` for calls to an API to retrieve database information, but in this case I created a JSON file that contains the contacts and made a ```$http.get``` request to it.
